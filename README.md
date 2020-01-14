@@ -55,6 +55,7 @@ BITCODE → NO
 
 ### Unity 4.6.7p2
 
+```
 * Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 0 : 60fps
 * Application.targetFrameRate =   0, QualitySetting.vSyncCount = 0 : 60fps
 * Application.targetFrameRate =  20, QualitySetting.vSyncCount = 0 : 20fps
@@ -79,9 +80,11 @@ BITCODE → NO
 * QualitySetting.vSyncCount = 3 : 設定できない
 
 * QualitySetting.vSyncCount = 4 : 設定できない
+```
 
 ### Unity 2017.4.20f2
 
+```
 * Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 0 : 30fps
 * Application.targetFrameRate =   0, QualitySetting.vSyncCount = 0 : 30fps
 * Application.targetFrameRate =  20, QualitySetting.vSyncCount = 0 : 20fps
@@ -116,3 +119,4 @@ BITCODE → NO
 * Application.targetFrameRate =  30, QualitySetting.vSyncCount = 4 : 30fps
 * Application.targetFrameRate =  60, QualitySetting.vSyncCount = 4 : 60fps
 * Application.targetFrameRate = 100, QualitySetting.vSyncCount = 4 : 60fps
+```
