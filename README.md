@@ -1,15 +1,6 @@
 # FramerateVSyncTest-4.6.7
 FramerateVSyncTest for Unity 4.6.7
 
-## ツール
-
-### mac:
-* macOS 10.14.6 (Mojave)
-* Xcode 9.4.1
-
-### Windows (Parallels):
-* Unity 4.6.7p2 (4.6.7f1 が最新だが、事情により p2 を用いた)
-
 ## 目的
 
 Unity 4.6.7 におけるフレームレート設定周りの挙動を確認するため。
@@ -19,7 +10,7 @@ Unity 4.6.7 におけるフレームレート設定周りの挙動を確認す�
 Unity 2017 で同じプロジェクトをビルドした場合、
 Application.targetFrameRate = 0
 QualitySetting.vSyncCount = 0
-の場合、30fps
+の場合、30fps。
 
 しかし、Unity 4.6.7 の場合、同じ設定で 60fps になる。
 
@@ -36,13 +27,24 @@ iPhone XS 以降は、アーキテクチャが arm64e になっている。Xcode
 以下の二箇所も Xcode 上で要変更。
 
 ### Build Settings
-* BITCODE NO
+BITCODE → NO
 
 ### Libraries/libil2cpp/include/il2cpp-config.h
-
+以下のように編集 (__declspec を使わないようにする)
+```
 #if IL2CPP_COMPILER_MSVC || IL2CPP_TARGET_DARWIN || defined(__ARMCC_VERSION)
 //#define NORETURN __declspec(noreturn)
 #define NORETURN
 #else
 #define NORETURN
 #endif
+```
+
+## ツールバージョン
+
+### mac:
+* macOS 10.14.6 (Mojave)
+* Xcode 9.4.1
+
+### Windows (Parallels):
+* Unity 4.6.7p2 (4.6.7f1 が最新だが、本検証で確かめたかったプロジェクトは p2 を用いていたので、これを使った)
