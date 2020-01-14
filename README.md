@@ -8,8 +8,10 @@ Unity 4.6.7 におけるフレームレート設定周りの挙動を確認す�
 ## 結果
 
 Unity 2017 で同じプロジェクトをビルドした場合、
+```
 Application.targetFrameRate = 0
 QualitySetting.vSyncCount = 0
+```
 の場合、30fps。
 
 しかし、Unity 4.6.7 の場合、同じ設定で 60fps になる。
@@ -19,12 +21,12 @@ QualitySetting.vSyncCount = 0
 Unity 4.6.7 は、APFS でフォーマットされたファイルシステム上で正常に動作しない (Unity 4.6.7 の当時、APFS はなかったので仕方がない。Unity 5.5.5p2 で解消 https://forum.unity.com/threads/unity-and-macos-10-13-high-sierra.474527/ )。
 そのため、Unity プロジェクトの構築とビルドは、Windows 上で行い、生成された Xcode プロジェクトを mac 上で Xcode で開く。
 
-Unity 4.6.7 で生成した Xcode プロジェクトは、stdテンプレートを使うので、Xcode 9 以前を使う必要がある。
+Unity 4.6.7 で生成した Xcode プロジェクトは、stdテンプレートを使うので、Xcode 10 以降ではコンパイルできない。Xcode 9 以前を使う必要がある。
 
 Unity 上では、arm64 対応のため、IL2CPP 設定でビルドする。
 iPhone XS 以降は、アーキテクチャが arm64e になっている。Xcode 9 は、このアーキテクチャをサポートしないので、直接実行することはできないが、arm64 IPA を生成してイてインストールすることはできる。
 
-以下の二箇所も Xcode 上で要変更。
+加えて、以下の二箇所も Xcode 上で要変更。
 
 ### Build Settings
 BITCODE → NO
