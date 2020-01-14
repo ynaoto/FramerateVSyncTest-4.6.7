@@ -224,11 +224,11 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 24
+    m_MaxSize: 32
     m_Alignment: 4
     m_RichText: 0
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: vSyncCount
 --- !u!222 &43674251
@@ -1781,11 +1781,11 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 24
+    m_MaxSize: 32
     m_Alignment: 4
     m_RichText: 0
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: unityVersion
 --- !u!222 &854186129
@@ -2172,11 +2172,11 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 24
+    m_MaxSize: 32
     m_Alignment: 4
     m_RichText: 0
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: deviceInfo
 --- !u!222 &1257630937
@@ -3096,11 +3096,11 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 24
+    m_MaxSize: 32
     m_Alignment: 4
     m_RichText: 0
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: fps
 --- !u!222 &1501572718
@@ -4001,11 +4001,11 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 24
+    m_MaxSize: 32
     m_Alignment: 4
     m_RichText: 0
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: targetFrameRate
 --- !u!222 &2078846203
