@@ -51,7 +51,77 @@ BITCODE → NO
 ### Windows (Parallels):
 * Unity 4.6.7p2 (4.6.7f1 が最新だが、本検証で確かめたかったプロジェクトは p2 を用いていたので、これを使った)
 
-## 測定 (iPhone 11 Pro / iOS 13.3)
+## 測定 (iPhone 12,3 (11 Pro) / iOS 13.3)
+
+### Unity 4.6.7p2
+
+```
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 0 : 60fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 0 : 60fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 0 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 0 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 0 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 0 : 60fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 1 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 1 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 1 : 60fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 2 : 60fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 2 : 60fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 2 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 2 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 2 : 60fps
+
+* QualitySetting.vSyncCount = 3 : 設定できない
+
+* QualitySetting.vSyncCount = 4 : 設定できない
+```
+
+### Unity 2017.4.20f2
+
+```
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 0 : 30fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 0 : 30fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 0 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 0 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 0 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 0 : 60fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 1 : 30fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 1 : 30fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 1 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 1 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 1 : 60fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 2 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 2 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 2 : 60fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 3 : 30fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 3 : 30fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 3 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 3 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 3 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 3 : 60fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 4 : 30fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 4 : 30fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 4 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 4 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 4 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 4 : 60fps
+```
+
+## 測定 (iPhone 5,3 (5c) / iOS 9.1)
 
 ### Unity 4.6.7p2
 
