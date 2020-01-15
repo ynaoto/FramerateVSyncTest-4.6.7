@@ -190,3 +190,75 @@ BITCODE → NO
 * Application.targetFrameRate =  60, QualitySetting.vSyncCount = 4 : 60fps
 * Application.targetFrameRate = 100, QualitySetting.vSyncCount = 4 : 60fps
 ```
+
+## 測定 (Intel Core i5 / Windows 8.1 (10))
+
+### Unity 4.6.7p2
+
+```
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 0 : 500fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 0 : 500fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 0 : 20-100fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 0 : 30-100fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 0 : 60-100fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 0 : 100fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 1 : 60fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 2 : 30fps
+
+* QualitySetting.vSyncCount = 3 : 設定できない?
+
+* QualitySetting.vSyncCount = 4 : 設定できない?
+```
+
+## 測定 (MacBookPro 15,2 / Mac OS X 10.14.6)
+
+### Unity 2017.4.20f2
+
+```
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 0 : 500fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 0 : 500fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 0 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 0 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 0 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 0 : 100fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 1 : 60fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 1 : 60fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 2 : 30fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 2 : 30fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 3 : 20fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 3 : 20fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 3 : 20fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 3 : 20fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 3 : 20fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 3 : 20fps
+
+* Application.targetFrameRate =  -1, QualitySetting.vSyncCount = 4 : 15fps
+* Application.targetFrameRate =   0, QualitySetting.vSyncCount = 4 : 15fps
+* Application.targetFrameRate =  20, QualitySetting.vSyncCount = 4 : 15fps
+* Application.targetFrameRate =  30, QualitySetting.vSyncCount = 4 : 15fps
+* Application.targetFrameRate =  60, QualitySetting.vSyncCount = 4 : 15fps
+* Application.targetFrameRate = 100, QualitySetting.vSyncCount = 4 : 15fps
+```
